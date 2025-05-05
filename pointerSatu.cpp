@@ -19,3 +19,9 @@ int main()
     mahasiswa &refMhs = mhs; // reference to Mhs
     refMhs.nim = 2;          // change nim using pointer
     mhs.showNim();           // show update nim
+
+    mahasiswa *pMhs = &mhs; // pointer to mhs
+    pMhs->nim = 3;          // change nim using pointer
+    pMhs->showNim();        // show update nim
+    return 0;
+}
