@@ -17,3 +17,16 @@ private:
 public:
     pelajar(){nilai = 100} friend void manusia::showNilaiPelajar(pelajar &x);
 };
+
+void manusia::showNilaiPelajar(Pelajar &x)
+{
+    cout << x.niai;
+};
+
+int main()
+{
+    manusia budi;
+    pelajar pbudi;
+    budi.showNilaiPelajar(pbudi);
+    return 0;
+}
